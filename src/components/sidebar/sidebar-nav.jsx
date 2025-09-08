@@ -4,7 +4,7 @@ import menus from './../../config/app-menu.jsx';
 import { slideUp } from './../../composables/slideUp.js';
 import { slideToggle } from './../../composables/slideToggle.js';
 
-function NavItem({ menu, ...props }: LinkProps) {
+function NavItem({ menu, ...props }) {
 	let path = (menu.path) ? menu.path : '';
 	let resolved = useResolvedPath(path);
   let match = useMatch({ path: resolved.pathname });
